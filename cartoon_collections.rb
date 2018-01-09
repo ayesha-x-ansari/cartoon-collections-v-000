@@ -3,7 +3,7 @@ dwarves  = ["Doc", "Dopey", "Bashful", "Grumpy"]
 planeteer_array  = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
 short_words = ["puff", "go", "two"]
 ingredients = ["garlic", "cheddan", "rosemary", "gouda", "bread"]
-
+array = []
 
 def roll_call_dwarves(dwarves)
   dwarves.each_with_index do |name, index|
@@ -25,27 +25,20 @@ def long_planeteer_calls(array)
   element_len4 = false
   array.each do |element|
     if element.length > 4
-      element_len4 = true
+      return true
     end
   end
-  element_len4
+  # element_len4
 end
 
 def find_the_cheese(ingredients)
-  # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_found = nil
-  cheese_found =  ingredients.collect do |element| if cheese_types.include?(element)
-                                                      puts "fffffffffffff"
-                                                      puts element
-                                                      return cheese_found =element
-                                                     end
-
-  end
-  puts "cheese_found #{cheese_found}"
-
+  ingredients.collect  do |element|
+                          if cheese_types.include?(element)
+                             return cheese_found =element
+                          end
+                       end
 end
-find_the_cheese(ingredients)
-
 
 #!/usr/bin/env ruby -wKU
