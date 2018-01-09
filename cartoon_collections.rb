@@ -37,6 +37,7 @@ def find_the_cheese(ingredients)
   cheese_found = nil
   cheese_found =  ingredients.collect do |element| if cheese_types.include?(element)
                                                       puts "fffffffffffff"
+                                                      puts element 
                                                       return cheese_found =element
                                                      end
 
