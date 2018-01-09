@@ -35,8 +35,9 @@ def find_the_cheese(ingredients)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_found = nil
-  cheese_found =  ingredients.collect do |element| if cheese_types.include?(element) = true
+  cheese_found =  ingredients.collect do |element| if cheese_types.include?(element)
                                                       puts "fffffffffffff"
+                                                      return cheese_found =element
                                                      end
 
   end
