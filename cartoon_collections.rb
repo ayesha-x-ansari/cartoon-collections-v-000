@@ -2,7 +2,7 @@
 dwarves  = ["Doc", "Dopey", "Bashful", "Grumpy"]
 planeteer_array  = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
 short_words = ["puff", "go", "two"]
-ingredients = ["garlic", "cheddar", "rosemary", "gouda", "bread"]
+ingredients = ["garlic", "cheddan", "rosemary", "gouda", "bread"]
 
 
 def roll_call_dwarves(dwarves)
@@ -37,7 +37,7 @@ def find_the_cheese(ingredients)
   cheese_found = nil
   cheese_found =  ingredients.collect do |element| if cheese_types.include?(element)
                                                       puts "fffffffffffff"
-                                                      puts element 
+                                                      puts element
                                                       return cheese_found =element
                                                      end
 
