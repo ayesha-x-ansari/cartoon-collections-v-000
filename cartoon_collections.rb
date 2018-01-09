@@ -28,7 +28,7 @@ def long_planeteer_calls(array)
       return true
     end
   end
-  # element_len4
+  element_len4
 end
 
 def find_the_cheese(ingredients)
@@ -36,7 +36,7 @@ def find_the_cheese(ingredients)
   cheese_found = nil
   ingredients.collect  do |element|
                           if cheese_types.include?(element)
-                             return cheese_found =element
+                             return cheese_found = element
                           end
                        end
 end
