@@ -39,6 +39,7 @@ def find_the_cheese(ingredients)
                              return cheese_found = element
                           end
                        end
+  cheese_found
 end
 
 #!/usr/bin/env ruby -wKU
